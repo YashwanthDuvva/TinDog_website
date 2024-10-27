@@ -1,0 +1,282 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 56px;
+}
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+    font-size: 1rem;
+}
+.lead{
+    color: rgb(54, 48, 48);
+    
+}
+#title {
+    background-color: #ff4c68;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.container {
+    padding: 3% 15% 7%;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 0 0 4.5rem;
+    transition: all 0.3s ease;
+    background-color: #df475e;
+   
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Download buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    transform: scale(1.1);
+}
+
+/* Title image */
+.image-title {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    transition: transform 0.5s ease;
+}
+
+.image-title:hover {
+    transform: rotate(25deg) scale(1.1);
+}
+
+/* Features section */
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff4c68;
+    transform: scale(1.2);
+}
+
+/* Testimonials section */
+#testimonials {
+    text-align: center; 
+    background-color: #ef8172;
+    color: white;
+}
+
+.test-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.test-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Press section */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 25px 20px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.press-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Pricing section */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pri {
+    padding: 3% 2%;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA section */
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+/* Footer section */
+#footer {
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #fff;
+}
+
+.social-icon {
+    margin: 20px 10px;
+    font-size: 1.5rem;
+    color: #8f8f8f;
+    transition: all 0.3s ease;
+}
+
+/* Media query for responsive design */
+@media (max-width: 990px) {
+    #title {
+        text-align: center;
+    }
+    .image-title {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Animation for pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+/* styles for other pages*/
+.page-header {
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-option {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+    background-color: #f8f9fa;
+}
+
+.quiz-option.selected {
+    background-color: #007bff;
+    color: #fff;
+}
